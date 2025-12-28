@@ -1,14 +1,3 @@
-*.pyc
-otherstuff
-proctags.py
-*.swp
-tags.vim
-tags
-matlab
-build
-MANIFEST
-jo
-stage/
-index.jemdoc
-mysite.conf
-jemdoc
+_site/
+push.sh
+.DS_Store
