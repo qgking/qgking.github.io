@@ -14,7 +14,7 @@
 # 📚 Teaching
 - Comprehensive Project Practice in Internet System, Undergraduate Course / Graduate Course (Fall Semester)
 - Software Engineering, Undergraduate Course (Fall Semester)
-- Software Engineering Technical Laboratory (C Programming Track)
+- Software Engineering Technical Laboratory (C/C++ Programming)
 Graduate Course (Fall Semester)
  
 <!-- # 💻 Internships
