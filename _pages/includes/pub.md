@@ -1,14 +1,14 @@
 
 # 📝 Publications 
 ## 🎙 2026
-- ``FCS`` [PKDF-Net: Anticancer peptide prediction via a prior-knowledge-aware dual-path feature-entangled network](https://link.springer.com/article/10.1007/s11704-025-41308-1), Kexin Zhou, Linkuan Zhou, Fei Guo, Aihong Lu, Wu Fang, **Qiangguo Jin**✉
+- ``FCS`` [AirWSeg: a comprehensive dataset collection for pulmonary airway segmentation in medical imaging](https://link.springer.com/article/10.1007/s11704-025-41308-1), Kexin Zhou, Linkuan Zhou, Fei Guo, Aihong Lu, Wu Fang, **Qiangguo Jin**✉
 - ``EAAI`` [Three-dimensional geometric deep learning for reaction prediction with equivariant graph transformer](https://www.sciencedirect.com/science/article/pii/S0952197625028817), Zhouxiang Wang, Haicheng Yi, Zhuhong You, **Qiangguo Jin**
   
 ## 🎙 2025
 - ``NAR`` [CNAScope: pan-cancer copy number aberration database with functional annotation and interactive visualization](https://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkaf1242/65405616/gkaf1242.pdf), Xikang Feng, Jieyi Zheng, Sisi Peng, Anna Jiang, Ka Ho Ng, Chengshang Lyu, **Qiangguo Jin**✉, Lingxi Chen. <span style="color:red">(IF=13.1)</span>
 - ``EAAI`` [PKDF-Net: Anticancer peptide prediction via a prior-knowledge-aware dual-path feature-entangled network](https://www.sciencedirect.com/science/article/abs/pii/S0952197625017452), **Qiangguo Jin**, Ankang Wu, Leyi Wei, Hui Cui, Ping Xuan, Xikang Feng, Ran Su
 - ``BIBM 2025`` [ADSA-Net: Addressing intra- and inter-class variabilities for severity assessment of atopic dermatitis](https://ieeexplore.ieee.org/abstract/document/11357062), **Qiangguo Jin**, Xurong Chen, Hui Cui, Changming Sun, Youpeng Deng, Cong Cong, Yuqi Fang, Ran Su, Leyi Wei, Xiaoqing Zhao 
-<!-- - ``PG 2025`` [CMI-MTL: Cross-Mamba interaction based multi-task learning for medical visual question answering](https://arxiv.org/pdf/2511.01357), **Qiangguo Jin**, Xianyao Zheng, Hui Cui, Changming Sun, Yuqi Fang, Cong Cong, Ran Su, Leyi Wei, Ping Xuan, Junbo Wang -->
+- ``PG 2025`` [CMI-MTL: Cross-Mamba interaction based multi-task learning for medical visual question answering](https://arxiv.org/pdf/2511.01357), **Qiangguo Jin**, Xianyao Zheng, Hui Cui, Changming Sun, Yuqi Fang, Cong Cong, Ran Su, Leyi Wei, Ping Xuan, Junbo Wang
 - ``ACM MM 2025`` [DSACap: Enhancing Visual-Semantic Alignment with Diffusion-based Framework for Image Captioning](https://dl.acm.org/doi/epdf/10.1145/3746027.3755156), Liangyu Fu, Junbo Wang, Yuke Li, **Qiangguo Jin**, et al.
 - `JBHI` [HRProtoKD: A hierarchical and relational prototype based knowledge distillation framework for few-shot cancer molecular subtyping](https://ieeexplore.ieee.org/abstract/document/11173262/), Fei Guo, Rui Shi, Jia Zhou, Junlin Xu, Hui Cui, Ping Xuan, Xikang Feng, Leyi Wei, Ran Su, **Qiangguo Jin**✉
 - `JBHI` [ERSR: An Ellipse-constrained pseudo-label refinement and symmetric regularization framework for semi-supervised fetal head segmentation in ultrasound images](https://ieeexplore.ieee.org/abstract/document/11141370/), Linkuan Zhou, Zhexin Chen, Yufei Shen, Junlin Xu, Ping Xuan, Yixin Zhu, Yuqi Fang, Cong Cong, Leyi Wei, Ran Su, Jia Zhou, **Qiangguo Jin**✉
