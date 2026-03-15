@@ -1,6 +1,7 @@
 # 🔥 News
 
-- *2026.02*: Three papers have been accepted by *CVPR 2026 (CCF A)*. See you all in Denver Colorado.
+- *2026.03*: 🎉🎉 A paper has been accepted by *BIB (SCI-1)*
+- *2026.02*: 🎉🎉 Three papers have been accepted by *CVPR 2026 (CCF A)*. See you all in Denver Colorado.
 - *2026.01*: I was invited to serve as an **Area Chair** for **MICCAI 2026** conference.
 - *2025.11*: 🎉🎉 A paper has been accepted by *AAAI 2026 (CCF A, Oral)*. See you all in Singapore.
 - *2025.10*: 🎉🎉 Our papaer has been accepted by *NAR (IF=13.1)*
