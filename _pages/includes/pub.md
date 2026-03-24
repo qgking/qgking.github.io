@@ -1,6 +1,7 @@
 
 # 📝 Publications 
 ## 🎙 2026
+- ``CVPR`` [SHAPE: Structure-aware Hierarchical Unsupervised Domain Adaptation with Plausibility Evaluation for Medical Image Segmentation](https://arxiv.org/pdf/2603.21904), Linkuan Zhou, Yinghao Xia, Yufei Shen, Xiangyu Li, Wenjie Du, Cong Cong, Leyi Wei, Ran Su, **Qiangguo Jin**
 - ``AAAI`` [EccoMamba: Enhanced Cross-hierarchical Continuity Orthogonal Mamba for Medical Image Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/38109), Junlin Xu, Jincan Li, Feifei Cui, Zhuang Zhang, Jialiang Yang, Shuting Jin, **Qiangguo Jin**, Yajie Meng
 - ``FCS`` [AirWSeg: a comprehensive dataset collection for pulmonary airway segmentation in medical imaging](https://link.springer.com/article/10.1007/s11704-025-41308-1), Kexin Zhou, Linkuan Zhou, Fei Guo, Aihong Lu, Wu Fang, **Qiangguo Jin**
 - ``EAAI`` [Three-dimensional geometric deep learning for reaction prediction with equivariant graph transformer](https://www.sciencedirect.com/science/article/pii/S0952197625028817), Zhouxiang Wang, Haicheng Yi, Zhuhong You, **Qiangguo Jin**
