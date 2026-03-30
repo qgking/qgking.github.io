@@ -20,9 +20,9 @@ Graduate Course (Fall Semester)
 <!-- # 💻 Internships
 - *2015.07 - 2015.09*, Alibaba, Hangzhou. -->
 
-# 📺 Social media
+<!-- # 📺 Social media
 <div class='paper-box'><div class='paper-box-image' style='min-width: 18em;justify-content: center'><img src='images/wechat.png' alt="sym" width="40%"></div>
 <div class='paper-box-text' markdown="1" style='padding-left:0'>
 Welcome to follow our Wechat official account: iBioMedInfo, we will share recent studies on biomedical image and bioinformation analysis there. 
 </div>
-</div>
+</div> -->
