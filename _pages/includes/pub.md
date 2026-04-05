@@ -1,7 +1,9 @@
 
 # 📝 Publications
 ## 🎙 2026
-- ``ESWA`` [Topology-enhanced hypergraph learning and adaptive multi-graph transformer for prediction of drug-related side effects]([10.1093/bib/bbag167](https://www.sciencedirect.com/science/article/pii/S0957417426010638)), Ping Xuan, Xidong Yang, Sentao Chen, Hui Cui, Zelong Xu, **Qiangguo Jin**, Tiangang Zhang
+- ``TII`` [KG-CMI: Knowledge graph enhanced cross-Mamba interaction for medical visual question answering](https://arxiv.org/pdf/2604.00601), Xianyao Zheng, Hong Yu, Hui Cui, Changming Sun, Xiangyu Li, Ran Su, Leyi Wei, Jia Zhou, Junbo Wang, **Qiangguo Jin✉**
+- ``ESWA`` [Topology-enhanced hypergraph learning and adaptive multi-graph transformer for prediction of drug-related side effects](https://www.sciencedirect.com/science/article/pii/S0957417426010638), Ping Xuan, Xidong Yang, Sentao Chen, Hui Cui, Zelong Xu, **Qiangguo Jin**, Tiangang Zhang
+- ``CVPR`` [TAMER: A Tri-Modal Contrastive Alignment and Multi-Scale Embedding Refinement Framework for Zero-Shot ECG Diagnosis](https://arxiv.org/pdf/2603.21904), Xuewei Zhou, Yajie Meng, Pan Zeng, Xianfang Tang, Feifei Cui, **Qiangguo Jin✉**, Jialiang Yang, Junlin Xu
 - ``CVPR`` [SHAPE: Structure-aware Hierarchical Unsupervised Domain Adaptation with Plausibility Evaluation for Medical Image Segmentation](https://arxiv.org/pdf/2603.21904), Linkuan Zhou, Yinghao Xia, Yufei Shen, Xiangyu Li, Wenjie Du, Cong Cong, Leyi Wei, Ran Su, **Qiangguo Jin✉**
 - ``AAAI`` [EccoMamba: Enhanced Cross-hierarchical Continuity Orthogonal Mamba for Medical Image Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/38109), Junlin Xu, Jincan Li, Feifei Cui, Zhuang Zhang, Jialiang Yang, Shuting Jin, **Qiangguo Jin✉**, Yajie Meng
 - ``FCS`` [AirWSeg: a comprehensive dataset collection for pulmonary airway segmentation in medical imaging](https://link.springer.com/article/10.1007/s11704-025-41308-1), Kexin Zhou, Linkuan Zhou, Fei Guo, Aihong Lu, Wu Fang, **Qiangguo Jin✉**
