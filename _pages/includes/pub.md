@@ -1,7 +1,7 @@
 
 # 📝 Publications
 ## 🎙 2026
-- ``TII`` [KG-CMI: Knowledge graph enhanced cross-Mamba interaction for medical visual question answering](https://arxiv.org/pdf/2604.00601), Xianyao Zheng, Hong Yu, Hui Cui, Changming Sun, Xiangyu Li, Ran Su, Leyi Wei, Jia Zhou, Junbo Wang, **Qiangguo Jin✉**
+- ``TII`` [KG-CMI: Knowledge graph enhanced cross-Mamba interaction for medical visual question answering](https://ieeexplore.ieee.org/document/11478768), Xianyao Zheng, Hong Yu, Hui Cui, Changming Sun, Xiangyu Li, Ran Su, Leyi Wei, Jia Zhou, Junbo Wang, **Qiangguo Jin✉**
 - ``ESWA`` [Topology-enhanced hypergraph learning and adaptive multi-graph transformer for prediction of drug-related side effects](https://www.sciencedirect.com/science/article/pii/S0957417426010638), Ping Xuan, Xidong Yang, Sentao Chen, Hui Cui, Zelong Xu, **Qiangguo Jin**, Tiangang Zhang
 - ``CVPR`` [SHAPE: Structure-aware Hierarchical Unsupervised Domain Adaptation with Plausibility Evaluation for Medical Image Segmentation](https://arxiv.org/pdf/2603.21904), Linkuan Zhou, Yinghao Xia, Yufei Shen, Xiangyu Li, Wenjie Du, Cong Cong, Leyi Wei, Ran Su, **Qiangguo Jin✉**
 - ``AAAI`` [EccoMamba: Enhanced Cross-hierarchical Continuity Orthogonal Mamba for Medical Image Segmentation](https://ojs.aaai.org/index.php/AAAI/article/view/38109), Junlin Xu, Jincan Li, Feifei Cui, Zhuang Zhang, Jialiang Yang, Shuting Jin, **Qiangguo Jin✉**, Yajie Meng
