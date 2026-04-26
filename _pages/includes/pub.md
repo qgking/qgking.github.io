@@ -1,6 +1,8 @@
 
 # 📝 Publications
 ## 🎙 2026
+- ``ASOC`` [ADSA-Net+: Atopic Dermatitis Severity Assessment from Smartphone Images based on Spatial Contextual Attention and Hard Sample Oriented Contrastive Learning](#), Xurong Chen, Hong Yu, Hui Cui, Changming Sun, Leyi Wei, Ran Su, Xiaoqing Zhao, Xikang Feng, **Qiangguo Jin✉**
+- ``ASOC`` [A Survey on Unsupervised Domain Adaptation in Medical Imaging: Methods, Dataset, and Future Outlook](#), Hancun Yang, Henjun Guo, Guanlin Liu, Linkuan Zhou, Junlin Xu, Leyi Wei, Ran Su, **Qiangguo Jin✉**
 - ``TII`` [KG-CMI: Knowledge graph enhanced cross-Mamba interaction for medical visual question answering](https://ieeexplore.ieee.org/document/11478768), Xianyao Zheng, Hong Yu, Hui Cui, Changming Sun, Xiangyu Li, Ran Su, Leyi Wei, Jia Zhou, Junbo Wang, **Qiangguo Jin✉**
 - ``ESWA`` [Topology-enhanced hypergraph learning and adaptive multi-graph transformer for prediction of drug-related side effects](https://www.sciencedirect.com/science/article/pii/S0957417426010638), Ping Xuan, Xidong Yang, Sentao Chen, Hui Cui, Zelong Xu, **Qiangguo Jin**, Tiangang Zhang
 - ``BIB`` [CRESCENT: A Deep LearningFramework with Multi-Scale Attention for Detecting Recurrent Copy Number Aberrations](https://doi.org/10.1093/bib/bbag167), Xikang Feng, Zheng Xu, Sisi Peng, Jieyi Zheng, Chuan Ma, **Qiangguo Jin✉**, Lingxi Chen
