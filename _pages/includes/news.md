@@ -10,6 +10,3 @@
 - *2025.10*: 🎉🎉 Three papers have been accepted by *BIBM 2026*
 - *2025.09*: 🎉🎉 A paper has been accepted by *JBHI (SCI-1)*
 - *2025.08*: 🎉🎉 A paper has been accepted by *JBHI (SCI-1)*
-- *2025.08*: 🎉🎉 A paper has been accepted by *PG 2025*
-- *2025.07*: 🎉🎉 A paper has been accepted by *ACMM MM 2025 (CCF A)*, Congratulations to our collaborators!
-- *2025.07*: 🎉🎉 A paper has been accepted by *EAAI (SCI-1)*
