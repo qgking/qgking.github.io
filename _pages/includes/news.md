@@ -1,5 +1,7 @@
 # 🔥 News
-- *2026.04*: 🎉🎉 Two papers have accepted by *ASOC (SCI-2)*.
+- *2026.05*: 🎉🎉 A paper has been accepted by *ESWA (SCI-1)*，Congratulations to our collaborators!
+- *2026.05*: 🎉🎉 A paper has been accepted by *Interdiscip Sci Comput Life Sci (SCI-2)*，Congratulations to our collaborators!
+- *2026.04*: 🎉🎉 Two papers have been accepted by *ASOC (SCI-2)*.
 - *2026.03*: 🎉🎉 A paper has been accepted by *ESWA (SCI-1)*, Congratulations to our collaborators!
 - *2026.03*: 🎉🎉 A paper has been accepted by *TII (SCI-1)*
 - *2026.03*: 🎉🎉 A paper has been accepted by *BIB (SCI-1)*
@@ -8,5 +10,3 @@
 - *2025.11*: 🎉🎉 A paper has been accepted by *AAAI 2026 (CCF A, Oral)*. See you all in Singapore.
 - *2025.10*: 🎉🎉 Our papaer has been accepted by *NAR (IF=13.1)*
 - *2025.10*: 🎉🎉 Three papers have been accepted by *BIBM 2026*
-- *2025.09*: 🎉🎉 A paper has been accepted by *JBHI (SCI-1)*
-- *2025.08*: 🎉🎉 A paper has been accepted by *JBHI (SCI-1)*
