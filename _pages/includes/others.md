@@ -2,7 +2,7 @@
 # 📖 Educations
 - *2017.09 - 2021.06*, Ph.D. in School of Computer Software, College of Intelligence and Computing, Tianjin University, Tianjin, China.
 - *2014.09 - 2017.01*, M.S. in School of Computer Software, Tianjin University, Tianjin, China.
-- *2010.09 - 2014.06*,  B.S. in School of Computer Software, Tianjin University, Tianjin, China.
+- *2010.09 - 2014.06*, B.S. in School of Computer Software, Tianjin University, Tianjin, China.
 
 # 💬 Invited Talks
 - *2025.12*, Intelligent Analysis Methods for Few-Shot Biomedical Imaging, ChangZhou Institute Of Technology, Changzhou, China.
@@ -14,8 +14,7 @@
 # 📚 Teaching
 - Comprehensive Project Practice in Internet System, Undergraduate Course / Graduate Course (Fall Semester)
 - Software Engineering, Undergraduate Course (Fall Semester)
-- Software Engineering Technical Laboratory (C/C++ Programming),
-Graduate Course (Fall Semester)
+- Software Engineering Technical Laboratory (C/C++ Programming), Graduate Course (Fall Semester)
  
 <!-- # 💻 Internships
 - *2015.07 - 2015.09*, Alibaba, Hangzhou. -->
