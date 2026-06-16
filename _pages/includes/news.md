@@ -10,4 +10,3 @@
 - *2026.01*: I was invited to serve as an **Area Chair** for **MICCAI 2026** conference.
 - *2025.11*: 🎉🎉 A paper has been accepted by *AAAI 2026 (CCF A, Oral)*. See you all in Singapore.
 - *2025.10*: 🎉🎉 Our papaer has been accepted by *NAR (IF=13.1)*
-- *2025.10*: 🎉🎉 Three papers have been accepted by *BIBM 2026*
