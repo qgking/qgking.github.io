@@ -1,6 +1,7 @@
 
 # 📝 Publications
 ## 🎙 2026
+- ``ICDM`` [HiMamba: A Hierarchical State Space Framework for Asymmetric Multimodal Data Mining in Clinical Assessment](#), Biandi Cheng, Peng Wang, Hui Cui, Ping Xuan, Cong Cong, Ran Su, Leyi Wei, **Qiangguo Jin✉**, Fei Guo✉, and Yupin Chen✉
 - ``JBHI`` [Speaking the Native Language of LLMs: A Discrete Architecture for Molecular Comprehension](https://doi.org/10.1109/JBHI.2026.3722237), Haoyang Liu, Xikang Feng, Fei Guo✉, Yuqian Chen, Zilong Zhang, Junlin Xu, Wenjie Du✉, **Qiangguo Jin✉**
 - ``ESWA`` [Slide-Aware Deep Feature Prompting for Enhanced Whole Slide Image Classification](https://doi.org/10.1016/j.eswa.2026.133079), Cong Cong, Yang Song, Antonio Di Ieva, **Qiangguo Jin**, Lei Fan, Angela Chou, Anthony J Gill, Sidong Liu
 - ``ISCLS`` [Pan-cancer Distant Metastasis Prediction Based on Graph Neural Network](https://doi.org/10.1007/s12539-026-00844-5), Fengyun Zhang, **Qiangguo Jin**, Changming Sun, Ruibing Chen, Jie Geng, Siqi Chen, Wenrun Cai, Xugang Sun, Xiaofeng Liu, Ran Su
