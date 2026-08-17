@@ -1,4 +1,5 @@
 # 🔥 News
+- *2026.08*: 🎉🎉 A paper has been accepted by *IEEE JBHI (SCI-1)*
 - *2026.06*: 🎉🎉 Two papers have been accepted by *MICCAI 2026 (CCF-B)*，Congratulations! See you all in Strasbourg, France.
 - *2026.05*: 🎉🎉 A paper has been accepted by *ESWA (SCI-1)*，Congratulations!
 - *2026.05*: 🎉🎉 A paper has been accepted by *Interdiscip Sci Comput Life Sci (SCI-2)*，Congratulations to our collaborators!

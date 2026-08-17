@@ -1,8 +1,9 @@
 
 # 📝 Publications
 ## 🎙 2026
+- ``JBHI`` [Speaking the Native Language of LLMs: A Discrete Architecture for Molecular Comprehension](https://doi.org/10.1109/JBHI.2026.3722237), Haoyang Liu, Xikang Feng, Fei Guo✉, Yuqian Chen, Zilong Zhang, Junlin Xu, Wenjie Du✉, **Qiangguo Jin✉**
 - ``ESWA`` [Slide-Aware Deep Feature Prompting for Enhanced Whole Slide Image Classification](https://doi.org/10.1016/j.eswa.2026.133079), Cong Cong, Yang Song, Antonio Di Ieva, **Qiangguo Jin**, Lei Fan, Angela Chou, Anthony J Gill, Sidong Liu
-- ``ISCLS`` [Pan-cancer Distant Metastasis Prediction Based on Graph Neural Network](https://link.springer.com/article/10.1007/s12539-026-00844-5), Fengyun Zhang, **Qiangguo Jin**, Changming Sun, Ruibing Chen, Jie Geng, Siqi Chen, Wenrun Cai, Xugang Sun, Xiaofeng Liu, Ran Su
+- ``ISCLS`` [Pan-cancer Distant Metastasis Prediction Based on Graph Neural Network](https://doi.org/10.1007/s12539-026-00844-5), Fengyun Zhang, **Qiangguo Jin**, Changming Sun, Ruibing Chen, Jie Geng, Siqi Chen, Wenrun Cai, Xugang Sun, Xiaofeng Liu, Ran Su
 - ``ASOC`` [ADSA-Net+: Atopic Dermatitis Severity Assessment from Smartphone Images based on Spatial Contextual Attention and Hard Sample Oriented Contrastive Learning](https://doi.org/10.1016/j.asoc.2026.115322), Xurong Chen, Hong Yu, Hui Cui, Changming Sun, Leyi Wei, Ran Su, Xiaoqing Zhao, Xikang Feng, **Qiangguo Jin✉**
 - ``ASOC`` [A Survey on Unsupervised Domain Adaptation in Medical Imaging: Methods, Dataset, and Future Outlook](https://doi.org/10.1016/j.asoc.2026.115314), Hancun Yang, Henjun Guo, Guanlin Liu, Linkuan Zhou, Junlin Xu, Leyi Wei, Ran Su, **Qiangguo Jin✉**
 - ``TII`` [KG-CMI: Knowledge graph enhanced cross-Mamba interaction for medical visual question answering](https://doi.org/10.1109/TII.2026.3676874), Xianyao Zheng, Hong Yu, Hui Cui, Changming Sun, Xiangyu Li, Ran Su, Leyi Wei, Jia Zhou, Junbo Wang, **Qiangguo Jin✉**
