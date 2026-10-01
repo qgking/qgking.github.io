@@ -1,6 +1,10 @@
 
 # 📝 Publications
 ## 🎙 2026
+- ``MICCAI`` [Generative Anchor-Guided Federated Domain Generalization for Heterogeneous Pan Cancer Image Analysis](https://doi.org/10.1007/978-3-032-38072-2_21), **Qiangguo Jin**, Yufei Shen, Linkuan Zhou, Fei Guo, Junlin Xu, Ping Xuan, Ran Su, Leyi Wei, and Cong Cong✉
+- ``MICCAI`` [LiSAD: A Label-Efficient Implicit Model with Spatially Adaptive Directional Total Variation for Spatial Transcriptomics](https://doi.org/10.1007/978-3-032-38069-2_34), Yinghao Xia, Xiaoxuan Ji, Haoyang Liu, Fei Guo✉, Xikang Feng, Liang He, Hui Cui, Shuang Xu, Ran Su, Leyi Wei, and **Qiangguo Jin✉**
+- ``BIBM`` [MSD-Net: Multimodal Siamese Differential Network for Sarcopenia Screening from Hip X-rays and Clinical Data](#), Xue Li, **Qiangguo Jin✉**, Yuqian Chen, Ping Xuan, Yajie Meng, Junlin Xu, and Fei Guo✉
+- ``BIBM`` [CeMixSP: A centroid-based domain mixup and structure preserving unsupervised domain adaptation model for medical image segmentation](#), **Qiangguo Jin**, Linkuan Zhou, Hui Cui, Changming Sun, Cong Cong, Yuqian Chen, Zilong Zhang, Feifei Cui, Fei Guo, Ping Xuan, and Yuqi Fang✉
 - ``ICDM`` [HiMamba: A Hierarchical State Space Framework for Asymmetric Multimodal Data Mining in Clinical Assessment](#), Biandi Cheng, Peng Wang, Hui Cui, Ping Xuan, Cong Cong, Ran Su, Leyi Wei, **Qiangguo Jin✉**, Fei Guo✉, and Yupin Chen✉
 - ``JBHI`` [Speaking the Native Language of LLMs: A Discrete Architecture for Molecular Comprehension](https://doi.org/10.1109/JBHI.2026.3722237), Haoyang Liu, Xikang Feng, Fei Guo✉, Yuqian Chen, Zilong Zhang, Junlin Xu, Wenjie Du✉, **Qiangguo Jin✉**
 - ``ESWA`` [Slide-Aware Deep Feature Prompting for Enhanced Whole Slide Image Classification](https://doi.org/10.1016/j.eswa.2026.133079), Cong Cong, Yang Song, Antonio Di Ieva, **Qiangguo Jin**, Lei Fan, Angela Chou, Anthony J Gill, Sidong Liu
