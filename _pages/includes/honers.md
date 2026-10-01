@@ -1,4 +1,8 @@
 # 🎖 Honors and Awards
+## 🎙 2026
+- First Prize, Scientific and Technological Progress Award, Chinese Institute of Command and Control (CICC)
+- Science Star, Northwestern Polytechnical University (10 awardees/year)
+ 
 ## 🎙 2025
 - First Prize, Excellent Scientific Research Achievement Award, Shaanxi Higher Education Institutions
 - First Prize and Second Prize, Teaching Achievement Awards (Undergraduate Level), Northwestern Polytechnical University
