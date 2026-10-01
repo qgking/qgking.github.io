@@ -1,5 +1,5 @@
 # 🔥 News
-- *2026.09*: 🎉🎉 Two papers have accepted by *PR (SCI-1)*. Congratulations to our collaborators!
+- *2026.09*: 🎉🎉 A papers have accepted by *PR (SCI-1)*. Congratulations to our collaborators!
 - *2026.09*: 🎉🎉 Two papers have accepted by *IEEE BIBM (CCF-B), See you all in Dallas, USA.*
 - *2026.08*: 🎉🎉 A paper has been accepted by *IEEE ICDM (CCF-B), Congratulations! See you all in Shenyang, China.*
 - *2026.08*: 🎉🎉 A paper has been accepted by *IEEE JBHI (SCI-1)*
