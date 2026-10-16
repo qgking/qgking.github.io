@@ -4,6 +4,7 @@
 - *2026.09*: 🎉🎉 Two papers have accepted by *IEEE BIBM (CCF-B), See you all in Dallas, USA.*
 - *2026.08*: 🎉🎉 A paper has been accepted by *IEEE ICDM (CCF-B), Congratulations! See you all in Shenyang, China.*
 - *2026.08*: 🎉🎉 A paper has been accepted by *IEEE JBHI (SCI-1)*
+- *2026.07*: I was invited to serve as an **Senior Program Committee** for **AAAI 2027** conference.
 - *2026.06*: 🎉🎉 Two papers have been accepted by *MICCAI 2026 (CCF-B)*，Congratulations! See you all in Strasbourg, France.
 - *2026.05*: 🎉🎉 A paper has been accepted by *ESWA (SCI-1)*，Congratulations!
 - *2026.05*: 🎉🎉 A paper has been accepted by *Interdiscip Sci Comput Life Sci (SCI-2)*，Congratulations to our collaborators!
