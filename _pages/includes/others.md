@@ -5,6 +5,7 @@
 - *2010.09 - 2014.06*, B.S. in School of Computer Software, Tianjin University, Tianjin, China.
 
 # 💬 Invited Talks
+- *2026.10*, Intelligent Analysis Methods for Data-Limited Multimodal Biomedical Scenarios, China National Computer Congress, Chengdu, China.
 - *2026.07*, Intelligent and Precise Analysis Methods for Data-Scarce Biomedical Scenarios, Second Affiliated Hospital of Xi'an Jiaotong University, Xi'an, China.
 - *2025.12*, Intelligent Analysis Methods for Few-Shot Biomedical Imaging, ChangZhou Institute Of Technology, Changzhou, China.
 - *2025.10*, Intelligent Analysis Methods for Few-Shot Biomedical Imaging, The 22nd Congress of Cardiac Imaging and Cardiac Intervention, Chinese Association of Health Promotion and Education, Beijing, China.
