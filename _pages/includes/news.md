@@ -1,4 +1,5 @@
 # 🔥 News
+- *2026.11*: 🎉🎉 Two papers have accepted by *ACM KDD 2027 (CCF-A)*
 - *2026.10*: 🎉🎉🎉🎉 Recognized among the World's Top 2% Scientists based on the Stanford University&Elsevier ranking of global highly cited researchers.
 - *2026.09*: 🎉🎉 A papers have accepted by *PR (SCI-1)*. Congratulations to our collaborators!
 - *2026.09*: 🎉🎉 Two papers have accepted by *IEEE BIBM (CCF-B), See you all in Dallas, USA.*
