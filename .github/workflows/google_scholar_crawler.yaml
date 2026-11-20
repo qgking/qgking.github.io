@@ -1,33 +1,65 @@
+
 name: Get Citation Data
 
-on: 
- page_build: 
- schedule:
-  - cron:  '0 8 * * *'
+on:
+  workflow_dispatch:
+  page_build:
+  schedule:
+    - cron: '0 8 * * *'
+
+# Allow GitHub Actions to push citation data
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v2
-    - name: Install Reqs
-      run: |
-        sudo apt-get install python3-setuptools
-    - name: Run
-      run: |
-        cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
-        python3 main.py
-        if [ -d "./results" ]; then
-          cd ./results
+      # Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Set Python version
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # Install dependencies
+      - name: Install Requirements
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r google_scholar_crawler/requirements.txt
+
+      # Run Google Scholar crawler
+      - name: Get Google Scholar Data
+        working-directory: google_scholar_crawler
+        env:
+          GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+        run: |
+          python main.py
+
+      # Commit and push citation data
+      - name: Push Citation Data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ ! -d "google_scholar_crawler/results" ]; then
+            echo "Results directory does not exist!"
+            exit 1
+          fi
+
+          cd google_scholar_crawler/results
+
           git init
-          git config --local user.name "${GITHUB_ACTOR}"
-          export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-          git add *.json
-          git commit -m "Updated Citation Data"
-          git push "${remote_repo}" HEAD:google-scholar-stats --force
-        else
-          echo "results directory does not exist, skipping commit and push"
-        fi
-      env: 
-        GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          git commit -m "Update citation data"
+
+          git push --force \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            HEAD:google-scholar-stats
