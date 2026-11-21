@@ -1,98 +1,96 @@
-"""Fetch Google Scholar author metrics for a GitHub Pages academic website.
-
-No proxy or paid API is used. If fetching fails, exit nonzero so the
-workflow leaves the previously published google-scholar-stats data intact.
-"""
-
+import ipaddress
 import json
 import os
+import random
+import re
 import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-from scholarly import scholarly
-from scholarly._proxy_generator import MaxTriesExceededException
-
-MAX_ATTEMPTS = 2
-RETRY_DELAY_SECONDS = 90
+import requests
+from scholarly import ProxyGenerator, scholarly
 
 
-def fetch_author(scholar_id: str) -> dict:
-    for attempt in range(1, MAX_ATTEMPTS + 1):
+# Public HTTP proxy lists. These are community-maintained and may be stale.
+# The script validates each proxy before asking scholarly to use it.
+PROXY_LIST_URLS = [
+    "https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt",
+    "https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt",
+]
+
+IP_CHECK_URL = "https://api.ipify.org?format=json"
+MAX_PROXY_LINES_TO_TEST = 20
+MAX_LIVE_PROXIES = 5
+MAX_SCHOLAR_ATTEMPTS = 3
+PROXY_CHECK_TIMEOUT = 6
+PROXY_LIST_TIMEOUT = 15
+
+HEADERS = {
+    "User-Agent": "Mozilla/5.0 (compatible; ScholarStatsUpdater/1.0)"
+}
+
+
+def normalize_proxy_line(line):
+    """Accept only plain IPv4:port or http://IPv4:port entries."""
+    line = line.strip()
+
+    if not line or line.startswith("#"):
+        return None
+
+    if line.lower().startswith("http://"):
+        line = line[7:]
+    elif "://" in line:
+        # SOCKS and HTTPS proxy entries are intentionally excluded.
+        return None
+
+    # Remove a trailing slash, but reject credentials and other formats.
+    line = line.rstrip("/")
+
+    if not re.fullmatch(r"(?:\d{1,3}\.){3}\d{1,3}:\d{1,5}", line):
+        return None
+
+    host, port_text = line.rsplit(":", 1)
+
+    try:
+        ipaddress.IPv4Address(host)
+        port = int(port_text)
+    except (ipaddress.AddressValueError, ValueError):
+        return None
+
+    if not 1 <= port <= 65535:
+        return None
+
+    return f"http://{host}:{port}"
+
+
+def download_proxy_candidates():
+    """Download and normalize candidates from public GitHub proxy lists."""
+    candidates = []
+    seen = set()
+
+    session = requests.Session()
+    session.trust_env = False
+
+    for url in PROXY_LIST_URLS:
         try:
-            print(f"正在查找作者信息（第 {attempt}/{MAX_ATTEMPTS} 次）...", flush=True)
-            author = scholarly.search_author_id(scholar_id)
-
-            # Avoid making two batches of requests back-to-back.
-            time.sleep(3)
-
-            print("正在填充作者详细信息...", flush=True)
-            author = scholarly.fill(
-                author,
-                sections=["basics", "indices", "counts", "publications"],
+            print(f"正在读取免费代理列表：{url}")
+            response = session.get(
+                url,
+                headers=HEADERS,
+                timeout=PROXY_LIST_TIMEOUT,
             )
-            return author
-        except MaxTriesExceededException as exc:
-            print(f"Google Scholar 访问失败: {exc}", flush=True)
-            if attempt == MAX_ATTEMPTS:
-                raise RuntimeError(
-                    "Google Scholar 连续访问失败；保留远程分支中的历史数据。"
-                ) from exc
-            print(f"等待 {RETRY_DELAY_SECONDS} 秒后重试...", flush=True)
-            time.sleep(RETRY_DELAY_SECONDS)
+            response.raise_for_status()
 
-    raise RuntimeError("未能获得 Google Scholar 作者数据")
+            for line in response.text.splitlines():
+                proxy = normalize_proxy_line(line)
+                if proxy and proxy not in seen:
+                    seen.add(proxy)
+                    candidates.append(proxy)
 
+        except requests.RequestException as exc:
+            print(f"代理列表读取失败，跳过此来源：{type(exc).__name__}: {exc}")
 
-def main() -> None:
-    scholar_id = os.environ.get("GOOGLE_SCHOLAR_ID", "").strip()
-    if not scholar_id:
-        raise RuntimeError("缺少 GOOGLE_SCHOLAR_ID：请检查 GitHub Actions Secret。")
+    session.close()
 
-    author = fetch_author(scholar_id)
-
-    # Never publish blank or partial data as a successful update.
-    if not isinstance(author, dict) or not author.get("name"):
-        raise ValueError("作者数据缺失 name，拒绝覆盖历史数据。")
-    if not isinstance(author.get("citedby"), int) or author["citedby"] < 0:
-        raise ValueError("引用量 citedby 缺失或不是有效整数，拒绝覆盖历史数据。")
-    if not isinstance(author.get("hindex"), int):
-        raise ValueError("H-index 缺失，拒绝覆盖历史数据。")
-    publications = author.get("publications")
-    if not isinstance(publications, list):
-        raise ValueError("publications 不完整，拒绝覆盖历史数据。")
-
-    by_id = {}
-    for publication in publications:
-        if not isinstance(publication, dict) or not publication.get("author_pub_id"):
-            raise ValueError("有论文缺少 author_pub_id，拒绝覆盖历史数据。")
-        by_id[publication["author_pub_id"]] = publication
-    if len(by_id) != len(publications):
-        raise ValueError("论文 ID 重复，拒绝覆盖历史数据。")
-
-    author["publications"] = by_id
-    author["updated"] = str(datetime.now(timezone.utc))
-
-    shieldio_data = {
-        "schemaVersion": 1,
-        "label": "citations",
-        "message": str(author["citedby"]),
-    }
-
-    # Serialize before writing: serialization errors should never publish bad data.
-    author_json = json.dumps(author, ensure_ascii=False)
-    shield_json = json.dumps(shieldio_data, ensure_ascii=False)
-    results = Path("results")
-    results.mkdir(exist_ok=True)
-    (results / "gs_data.json").write_text(author_json, encoding="utf-8")
-    (results / "gs_data_shieldsio.json").write_text(shield_json, encoding="utf-8")
-
-    print(
-        f"数据已保存：{author['name']}，citations={author['citedby']}，"
-        f"H-index={author['hindex']}，publications={len(by_id)}",
-        flush=True,
-    )
-
-
-if __name__ == "__main__":
-    main()
+    if not candidates:
+        raise RuntimeError(
