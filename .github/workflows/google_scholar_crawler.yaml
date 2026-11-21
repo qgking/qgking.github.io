@@ -1,4 +1,3 @@
-
 name: Get Citation Data
 
 on:
@@ -14,7 +13,6 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       # Checkout repository
       - name: Checkout repository
@@ -54,12 +52,8 @@ jobs:
 
           git init
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add -A
+          git config --local user.name "${GITHUB_ACTOR}"
+          export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git add *.json
           git commit -m "Update citation data"
-
-          git push --force \
-            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
-            HEAD:google-scholar-stats
+          git push "${remote_repo}" HEAD:google-scholar-stats --force
