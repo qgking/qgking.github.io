@@ -1,16 +1,5 @@
 
 # 📝 Publications
-
-<div class="selected">
-<div class="sel-title">Selected work</div>
-<ul>
-<li><span class="sel-tag">CVPR'26 · Oral</span><a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Qu_MDCS-MoAME_Multi-directional_Composite_Scanning_with_Mixture_of_Attention_and_Mamba_CVPR_2026_paper.pdf">MDCS-MoAME: Multi-directional Composite Scanning with Mixture of Attention and Mamba Experts for Cancer Survival Prediction</a></li>
-<li><span class="sel-tag">AAAI'26 · Oral</span><a href="https://doi.org/10.1609/aaai.v40i13.38109">EccoMamba: Enhanced Cross-hierarchical Continuity Orthogonal Mamba for Medical Image Segmentation</a></li>
-<li><span class="sel-tag">MICCAI'26</span><a href="https://doi.org/10.1007/978-3-032-38072-2_21">Generative Anchor-Guided Federated Domain Generalization for Heterogeneous Pan Cancer Image Analysis</a></li>
-<li><span class="sel-tag">NAR · IF 13.1</span><a href="https://doi.org/10.1093/nar/gkaf1242">CNAScope: pan-cancer copy number aberration database with functional annotation and interactive visualization</a></li>
-</ul>
-</div>
-
 ## 🎙 2026
 - ``MICCAI`` [Generative Anchor-Guided Federated Domain Generalization for Heterogeneous Pan Cancer Image Analysis](https://doi.org/10.1007/978-3-032-38072-2_21), **Qiangguo Jin**, Yufei Shen, Linkuan Zhou, Fei Guo, Junlin Xu, Ping Xuan, Ran Su, Leyi Wei, and Cong Cong✉
 - ``MICCAI`` [LiSAD: A Label-Efficient Implicit Model with Spatially Adaptive Directional Total Variation for Spatial Transcriptomics](https://doi.org/10.1007/978-3-032-38069-2_34), Yinghao Xia, Xiaoxuan Ji, Haoyang Liu, Fei Guo✉, Xikang Feng, Liang He, Hui Cui, Shuang Xu, Ran Su, Leyi Wei, and **Qiangguo Jin✉**
