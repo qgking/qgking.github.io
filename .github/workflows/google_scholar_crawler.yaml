@@ -1,79 +1,59 @@
 name: Get Citation Data
 
 on:
-  workflow_dispatch:          # Allow manual runs
+  workflow_dispatch:
+  page_build:
   schedule:
-    - cron: '17 8 * * *'      # Once per day, UTC 08:17
+    - cron: '0 8 * * *'
 
+# Allow GitHub Actions to push citation data
 permissions:
   contents: write
-
-concurrency:
-  group: google-scholar-stats
-  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
-
     steps:
-      - name: Checkout source repository
+      # Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python 3.11
+      # Set Python version
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      # Install dependencies
+      - name: Install Requirements
         run: |
+          python -m pip install --upgrade pip
           python -m pip install -r google_scholar_crawler/requirements.txt
 
-      - name: Fetch Google Scholar data
+      # Run Google Scholar crawler
+      - name: Get Google Scholar Data
         working-directory: google_scholar_crawler
         env:
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID }}
-          PYTHONUNBUFFERED: '1'
         run: |
           python main.py
 
-      # This step runs only if fetching succeeded. Old data is untouched on failure.
-      - name: Publish validated citation data
+      # Commit and push citation data
+      - name: Push Citation Data
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          set -euo pipefail
+          if [ ! -d "google_scholar_crawler/results" ]; then
+            echo "Results directory does not exist!"
+            exit 1
+          fi
 
-          src="${GITHUB_WORKSPACE}/google_scholar_crawler/results"
-          test -s "${src}/gs_data.json"
-          test -s "${src}/gs_data_shieldsio.json"
-          python -m json.tool "${src}/gs_data.json" >/dev/null
-          python -m json.tool "${src}/gs_data_shieldsio.json" >/dev/null
+          cd google_scholar_crawler/results
 
-          mkdir -p /tmp/scholar-publish
-          cd /tmp/scholar-publish
           git init
-          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
-          if git ls-remote --exit-code --heads origin google-scholar-stats >/dev/null; then
-            git fetch --depth=1 origin google-scholar-stats
-            git checkout -b google-scholar-stats FETCH_HEAD
-          else
-            git checkout --orphan google-scholar-stats
-          fi
-
-          cp "${src}/gs_data.json" ./gs_data.json
-          cp "${src}/gs_data_shieldsio.json" ./gs_data_shieldsio.json
-
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add gs_data.json gs_data_shieldsio.json
-
-          if git diff --cached --quiet; then
-            echo "Data did not change; nothing to commit."
-            exit 0
-          fi
-
-          git commit -m "Update Google Scholar citation data"
-          git push origin HEAD:refs/heads/google-scholar-stats
+          git config --local user.name "${GITHUB_ACTOR}"
+          export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
+          git add *.json
+          git commit -m "Update citation data"
+          git push "${remote_repo}" HEAD:google-scholar-stats --force
